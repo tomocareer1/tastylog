@@ -10,10 +10,10 @@ terraform {
     }
   }
   backend "s3" {
-    bucket  = "{YOUR-S3-BUCKET-NAME}"
-    key     = "{YOUR-S3-BUCKET-KEY}"
+    bucket  = "tastylog-bucket"
+    key     = "tasty"
     region  = "ap-northeast-1"
-    profile = "terraform"
+    profile = "test-infra"
   }
 }
 
@@ -21,7 +21,7 @@ terraform {
 # Provider
 # ---------------------------------------------
 provider "aws" {
-  profile = "terraform"
+  profile = "test-infra"
   region  = "ap-northeast-1"
 }
 
