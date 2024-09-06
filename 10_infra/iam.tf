@@ -17,7 +17,7 @@ resource "aws_iam_role" "app_iam_role" {
     Name    = "${var.project}-${var.environment}-app-iam-role"
     Project = var.project
     Env     = var.environment
-    Message = "hellooffs"
+    Message = "This role is used by EC2 instances to access other AWS services"
   }
 }
 
