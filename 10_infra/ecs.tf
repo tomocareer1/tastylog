@@ -57,7 +57,7 @@ resource "aws_ecs_task_definition" "webapp" {
   family = "${var.project}-${var.environment}-webapp-template"
 
   requires_compatibilities = ["FARGATE"]
-  network_mode             = "awsvpc"
+  network_modeee           = "awsvpc"
   cpu                      = 256 # .25 vCPU
   memory                   = 512 # 512 MB
 
